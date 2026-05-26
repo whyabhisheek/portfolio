@@ -116,25 +116,6 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="certifications">
-        <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 10.5}>
-            <h2 className="text-xl font-bold">Certifications</h2>
-          </BlurFade>
-          <div className="flex flex-wrap gap-1">
-            {DATA.certifications.map((cert, id) => (
-              <BlurFade
-                key={cert}
-                delay={BLUR_FADE_DELAY * 11 + id * 0.05}
-              >
-                <Badge variant="secondary" key={cert}>
-                  {cert}
-                </Badge>
-              </BlurFade>
-            ))}
-          </div>
-        </div>
-      </section>
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
