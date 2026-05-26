@@ -153,7 +153,7 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <div className="mx-auto grid w-full max-w-none grid-cols-1 gap-8 md:grid-cols-2">
+          <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {DATA.projects.map((project, id) => (
               <BlurFade
                 key={project.title}
@@ -166,7 +166,8 @@ export default function Page() {
                   description={project.description}
                   dates={project.dates}
                   tags={project.technologies}
-                  image={project.image}
+                  // image={project.image}
+                  // video={project.video}
                   links={project.links}
                 />
               </BlurFade>
